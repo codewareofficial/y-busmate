@@ -25,6 +25,9 @@ export default defineConfig(({ mode }) => ({
     minify: "esbuild",
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      },
       output: {
         manualChunks: {
           react: ["react", "react-dom", "react-router-dom"],
