@@ -6,8 +6,6 @@ README.md
 .env
 .env.local
 .env.*.local
-src
-public
 playwright.config.ts
 playwright-fixture.ts
 vitest.config.ts
