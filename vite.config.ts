@@ -20,14 +20,10 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     target: "ES2020",
-    outDir: "dist",
-    sourcemap: false,
+    outDir: "dist",    sourcemap: false,
     minify: "esbuild",
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'index.html'),
-      },
       output: {
         manualChunks: {
           react: ["react", "react-dom", "react-router-dom"],
