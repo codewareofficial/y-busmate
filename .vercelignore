@@ -9,5 +9,4 @@ README.md
 playwright.config.ts
 playwright-fixture.ts
 vitest.config.ts
-tsconfig.node.json
 eslint.config.js
